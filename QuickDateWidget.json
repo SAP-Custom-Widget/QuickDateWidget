@@ -1,0 +1,138 @@
+{
+    "id": "com.rohitchouhan.sap.quickdatewidget",
+    "version": "1.0.0",
+    "name": "Quick Date Widget",
+    "description": "SAC Custom Widget to get date,month, week, quarter, day from date",
+    "newInstancePrefix": "QuickDateWidget",
+    "vendor": "Rohit Chouhan",
+    "eula": "",
+    "license": "MIT",
+    "icon": "https:\/\/raw.githubusercontent.com\/SAP-Custom-Widget\/QuickDateWidget\/main\/icon.png",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-rohitchouhan-sap-quickdatewidget",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/QuickDateWidget@1.0.0\/QuickDateWidget.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        },
+        {
+            "kind": "builder",
+            "tag": "com-rohitchouhan-sap-quickdatewidget-builder",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/QuickDateWidget@1.0.0\/QuickDateWidget_Builder.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "date": {
+            "description": "Enter Date",
+            "type": "string",
+            "default": " 2023-03-09"
+        },
+        "year": {
+            "description": "Year of date",
+            "type": "string",
+            "default": ""
+        },
+        "month": {
+            "description": "Month of date",
+            "type": "string",
+            "default": ""
+        },
+        "quarter": {
+            "description": "Quarter of date",
+            "type": "string",
+            "default": ""
+        },
+        "day": {
+            "description": "Day of date",
+            "type": "string",
+            "default": ""
+        },
+        "week": {
+            "description": "Week of date",
+            "type": "string",
+            "default": ""
+        },
+        "dateof": {
+            "description": "Date Day of Date",
+            "type": "string",
+            "default": ""
+        },
+        "boxcolor": {
+            "description": "Color of Box",
+            "type": "string",
+            "default": "#f5f5f5"
+        }
+    },
+    "methods": {
+        "setDate": {
+            "description": "Set Enter Date",
+            "parameters": [
+                {
+                    "name": "date",
+                    "type": "string",
+                    "description": "Enter Date"
+                }
+            ],
+            "body": "this.date = date;"
+        },
+        "getDate": {
+            "returnType": "string",
+            "description": "Return Enter Date",
+            "body": "return this.date;"
+        },
+        "getYear": {
+            "returnType": "string",
+            "description": "Return Year of date",
+            "body": "return this.year;"
+        },
+        "getMonth": {
+            "returnType": "string",
+            "description": "Return Month of date",
+            "body": "return this.month;"
+        },
+        "getQuarter": {
+            "returnType": "string",
+            "description": "Return Quarter of date",
+            "body": "return this.quarter;"
+        },
+        "getDay": {
+            "returnType": "string",
+            "description": "Return Day of date",
+            "body": "return this.day;"
+        },
+        "getWeek": {
+            "returnType": "string",
+            "description": "Return Week of date",
+            "body": "return this.week;"
+        },
+        "getDateof": {
+            "returnType": "string",
+            "description": "Return Date Day of Date",
+            "body": "return this.dateof;"
+        },
+        "setBoxcolor": {
+            "description": "Set Color of Box",
+            "parameters": [
+                {
+                    "name": "boxcolor",
+                    "type": "string",
+                    "description": "Color of Box"
+                }
+            ],
+            "body": "this.boxcolor = boxcolor;"
+        },
+        "getBoxcolor": {
+            "returnType": "string",
+            "description": "Return Color of Box",
+            "body": "return this.boxcolor;"
+        }
+    },
+    "events": {
+        "onClick": {
+            "description": "User Clicked."
+        }
+    }
+}
